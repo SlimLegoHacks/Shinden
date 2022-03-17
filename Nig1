@@ -1,3 +1,7 @@
 
-game.ServerStorage[".stats"][Slyvq].Ryo.Value = 257271
-game.ServerStorage[".stats"][Slyvq].Rank.Value = 25
+game.ServerStorage[".stats"].Slyvq.Ryo.Value = 257271
+game.ServerStorage[".stats"].Slyvq.Rank.Value = 25
+
+print("HI YES PENIS")
+
+
