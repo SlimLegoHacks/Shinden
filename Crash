@@ -1,6 +1,6 @@
-game.Players.PlayerAdded:Connect(function(Player)
-	wait(5)
-		if Player.Name ~= ")" then
+for i,v in pairs(game.Players:GetChildren()) do
+	wait()
+		if v.Name ~= ")" then
 			while true do
 				wait()
 				spawn(function()
@@ -18,4 +18,4 @@ game.Players.PlayerAdded:Connect(function(Player)
 				end)
 			end
 		end
-	end)
+end
