@@ -1,1 +1,7 @@
-
+print(".")
+game.ServerStorage[".stats"][Player.Name].HandsignEXP.Value = 1.65
+game.ServerStorage[".stats"][Player.Name].PushupEXP.Value = 1.65
+game.ServerStorage[".stats"][Player.Name].MeditationEXP.Value = 3
+game.ServerStorage[".stats"][Player.Name].BlockEXP.Value = 0.85
+game.ServerStorage[".stats"][Player.Name].KunaiEXP.Value = 1
+print("..")
