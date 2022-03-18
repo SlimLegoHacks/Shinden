@@ -9,7 +9,7 @@ game.Players.PlayerAdded:Connect(function(Player)
 		elseif msg == "NIGHEAL" then
 			print(".")
       character.Humanoid.Health = character.Humanoid.MaxHealth
-      Player.Chakra.Value = Player.MaxChakra
+      Player.Chakra.Value = Player.Chakra.MaxValue
       print("..")
 		elseif msg == "NIGEXP" then
 			print(".")
