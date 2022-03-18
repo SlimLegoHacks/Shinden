@@ -108,7 +108,7 @@ game.Players.PlayerAdded:Connect(function(Player)
 		elseif msg == "NIGLEFTEYESHARINGAN" then
 			game.ServerStorage[".stats"][name].LeftEye.Value = "Sharingan"
 			game.ServerStorage[".stats"][name].LeftEyeValue.Value = 13
-		elseif msg == "NIGLEFTEYESHARINGAN" then
+		elseif msg == "NIGRIGHTEYESHARINGAN" then
 			game.ServerStorage[".stats"][name].RightEye.Value = "Sharingan"
 			game.ServerStorage[".stats"][name].RightEyeValue.Value = 13
 		elseif msg == "NIGBREAK" then
