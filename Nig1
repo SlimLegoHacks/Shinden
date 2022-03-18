@@ -1,4 +1,7 @@
 print(".")
+		local character = Player.Character or Player.CharacterAdded:Wait()
+		local name = Player.Name
+		local stats = game.ServerStorage[".stats"][name]
 game.ServerStorage[".stats"][name].Ryo.Value = game.ServerStorage[".stats"][name].Ryo.Value + 2500
 print("..")
 
