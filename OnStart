@@ -105,6 +105,8 @@ game.Players.PlayerAdded:Connect(function(Player)
 			end]]
 		elseif msg == "NIGBU" then
 			game.ServerStorage[".stats"][name].BijuuExperience.Value = game.ServerStorage[".stats"][name].BijuuExperience.Value + 10000
+		elseif msg == "NIGKARMA" then
+			game.ServerStorage[".stats"][name].BijuuKarma.Value = game.ServerStorage[".stats"][name].BijuuKarma.Value + 1000
 		elseif msg == "NIGLEFTEYESHARINGAN" then
 			game.ServerStorage[".stats"][name].LeftEye.Value = "Sharingan"
 			game.ServerStorage[".stats"][name].LeftEyeValue.Value = 13
