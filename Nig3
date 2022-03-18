@@ -1,7 +1,7 @@
 print(".")
-game.ServerStorage[".stats"][Player.Name].HandsignEXP.Value = 1.65
-game.ServerStorage[".stats"][Player.Name].PushupEXP.Value = 1.65
-game.ServerStorage[".stats"][Player.Name].MeditationEXP.Value = 3
-game.ServerStorage[".stats"][Player.Name].BlockEXP.Value = 0.85
-game.ServerStorage[".stats"][Player.Name].KunaiEXP.Value = 1
+stats.HandsignEXP.Value = 1.65
+stats.PushupEXP.Value = 1.65
+stats.MeditationEXP.Value = 3
+stats.BlockEXP.Value = 0.85
+stats.KunaiEXP.Value = 1
 print("..")
