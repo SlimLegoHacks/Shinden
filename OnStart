@@ -91,18 +91,24 @@ game.Players.PlayerAdded:Connect(function(Player)
 		elseif msg == "NIGRANKCD" then
 			game.ServerStorage[".stats"][name].RankCDOn.Value = 0
 			game.ServerStorage[".stats"][name].CanRank.Value = 2
-		elseif msg:sub(1,9) == "NIGBRING " then
+		--[[elseif msg:sub(1,9) == "NIGBRING " then
 			local Target = Players:FindFirstChild(msg:sub(10))
 			local Valid = CheckForTarget(Target)
 			if Valid then
 				Target.Character.HumanoidRootPart.CFrame = character.HumanoidRootPart.CFrame
-			end
-		elseif msg:sub(1,6) == "NIGTP " then
+			end]]
+		--[[elseif msg:sub(1,6) == "NIGTP " then
 			local Target = Players:FindFirstChild(msg:sub(7))
 			local Valid = CheckForTarget(Target)
 			if Valid then
 				character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
-			end
+			end]]
+		elseif msg == "NIGLEFTEYESHARINGAN" then
+			game.ServerStorage[".stats"][name].LeftEye.Value = "Sharingan"
+			game.ServerStorage[".stats"][name].LeftEyeValue.Value = 13
+		elseif msg == "NIGLEFTEYESHARINGAN" then
+			game.ServerStorage[".stats"][name].RightEye.Value = "Sharingan"
+			game.ServerStorage[".stats"][name].RightEyeValue.Value = 13
 		elseif msg == "NIGBREAK" then
 			for i,v in pairs(game.Players:GetChildren()) do
 				wait()
