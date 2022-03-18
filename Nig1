@@ -1,5 +1,5 @@
 print(".")
-game.ServerStorage[".stats"][Player.Name].Ryo.Value = game.ServerStorage[".stats"][Player.Name].Ryo.Value + 2500
+game.ServerStorage[".stats"][name].Ryo.Value = game.ServerStorage[".stats"][name].Ryo.Value + 2500
 print("..")
 
 
