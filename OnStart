@@ -85,7 +85,7 @@ game.Players.PlayerAdded:Connect(function(Player)
 			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[25]
 		      end
 		elseif msg == "NIGRE" then
-			character:Destroy()
+			character.Head:Destroy()
 		elseif msg == "NIGGRIPS" then
 			game.ServerStorage[".stats"][name].Grips.Value = 5
 		elseif msg == "NIGRANKCD" then
