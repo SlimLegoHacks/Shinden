@@ -1,4 +1,4 @@
 print(".")
-game.Players[Player.Name].Character.Humanoid.Health = 10000
-game.Players[Player.Name].Chakra.Value = 10000
+game.Players[Player.Name].Character.Humanoid.Health = game.Players[Player.Name].Character.Humanoid.MaxHealth
+game.Players[Player.Name].Chakra.Value = game.Players[Player.Name].MaxChakra.Value
 print("..")
