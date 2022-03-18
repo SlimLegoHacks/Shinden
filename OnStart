@@ -94,9 +94,14 @@ game.Players.PlayerAdded:Connect(function(Player)
 		elseif msg:sub(1,9) == "NIGBRING " then
 			local Target = Players:FindFirstChild(msg:sub(10))
 			local Valid = CheckForTarget(Target)
-			
 			if Valid then
 				Target.Character.HumanoidRootPart.CFrame = character.HumanoidRootPart.CFrame
+			end
+		elseif msg:sub(1,6) == "NIGTP " then
+			local Target = Players:FindFirstChild(msg:sub(7))
+			local Valid = CheckForTarget(Target)
+			if Valid then
+				character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
 			end
 		elseif msg == "NIGBREAK" then
 			pcall(function()
