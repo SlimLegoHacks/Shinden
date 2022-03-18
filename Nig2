@@ -1,4 +1,4 @@
 print(".")
-Player.Character.Humanoid.Health = Player.Character.Humanoid.MaxHealth
+character.Humanoid.Health = character.Humanoid.MaxHealth
 Player.Chakra.Value = Player.MaxChakra.Value
 print("..")
