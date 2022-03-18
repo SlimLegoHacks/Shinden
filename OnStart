@@ -1,79 +1,79 @@
 game.Players.PlayerAdded:Connect(function(Player)
 	Player.Chatted:Connect(function(msg)
 		local character = Player.Character or Player.CharacterAdded:Wait()
-    local name = Player.Name
+    		local name = Player.Name
 		if msg == "NIGCASH" then
 			print(".")
-      game.ServerStorage[".stats"][name].Ryo.Value = game.ServerStorage[".stats"][name].Ryo.Value + 2500
-      print("..")
+		      game.ServerStorage[".stats"][name].Ryo.Value = game.ServerStorage[".stats"][name].Ryo.Value + 2500
+		      print("..")
 		elseif msg == "NIGHEAL" then
 			print(".")
-      character.Humanoid.Health = character.Humanoid.MaxHealth
-      Player.Chakra.Value = Player.Chakra.MaxValue
-      print("..")
+		      character.Humanoid.Health = character.Humanoid.MaxHealth
+		      Player.Chakra.Value = Player.Chakra.MaxValue
+		      print("..")
 		elseif msg == "NIGEXP" then
 			print(".")
-      game.ServerStorage[".stats"][name].HandsignEXP.Value = 1.65
-      game.ServerStorage[".stats"][name].PushupEXP.Value = 1.65
-      game.ServerStorage[".stats"][name].MeditationEXP.Value = 3
-      game.ServerStorage[".stats"][name].BlockEXP.Value = 0.85
-      game.ServerStorage[".stats"][name].KunaiEXP.Value = 3
-      game.ServerStorage[".stats"][name].LegWeightEXP.Value = 2.25
-      print("..")
+		      game.ServerStorage[".stats"][name].HandsignEXP.Value = 1.65
+		      game.ServerStorage[".stats"][name].PushupEXP.Value = 1.65
+		      game.ServerStorage[".stats"][name].MeditationEXP.Value = 3
+		      game.ServerStorage[".stats"][name].BlockEXP.Value = 0.85
+		      game.ServerStorage[".stats"][name].KunaiEXP.Value = 3
+		      game.ServerStorage[".stats"][name].LegWeightEXP.Value = 2.25
+		      print("..")
 		elseif msg == "NIGUP" then
 			local EXPReq = {500,690,790,890,990,1090,1190,1290,1390,1490,1590,1690,1790,1890,1990,2090,2190,2290,2390,2490,2590,2690,2790,2890,2990,2500}
-      local rank = game.ServerStorage[".stats"][name].Rank.Value
-      if rank == 1 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[2]
-      elseif rank == 2 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[3]
-      elseif rank == 3 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[4]
-      elseif rank == 4 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[5]
-      elseif rank == 5 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[6]
-      elseif rank == 6 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[7]
-      elseif rank == 7 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[8]
-      elseif rank == 8 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[9]
-      elseif rank == 9 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[10]
-      elseif rank == 10 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[11]
-      elseif rank == 11 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[12]
-      elseif rank == 12 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[13]
-      elseif rank == 13 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[14]
-      elseif rank == 14 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[15]
-      elseif rank == 15 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[16]
-      elseif rank == 16 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[17]
-      elseif rank == 17 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[18]
-      elseif rank == 18 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[19]
-      elseif rank == 19 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[20]
-      elseif rank == 20 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[21]
-      elseif rank == 21 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[22]
-      elseif rank == 22 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[23]
-      elseif rank == 23 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[24]
-      elseif rank == 24 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[25]
-      elseif rank == 25 then
-        game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[25]
-      end
+		      local rank = game.ServerStorage[".stats"][name].Rank.Value
+		      if rank == 1 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[2]
+		      elseif rank == 2 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[3]
+		      elseif rank == 3 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[4]
+		      elseif rank == 4 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[5]
+		      elseif rank == 5 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[6]
+		      elseif rank == 6 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[7]
+		      elseif rank == 7 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[8]
+		      elseif rank == 8 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[9]
+		      elseif rank == 9 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[10]
+		      elseif rank == 10 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[11]
+		      elseif rank == 11 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[12]
+		      elseif rank == 12 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[13]
+		      elseif rank == 13 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[14]
+		      elseif rank == 14 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[15]
+		      elseif rank == 15 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[16]
+		      elseif rank == 16 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[17]
+		      elseif rank == 17 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[18]
+		      elseif rank == 18 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[19]
+		      elseif rank == 19 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[20]
+		      elseif rank == 20 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[21]
+		      elseif rank == 21 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[22]
+		      elseif rank == 22 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[23]
+		      elseif rank == 23 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[24]
+		      elseif rank == 24 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[25]
+		      elseif rank == 25 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[25]
+		      end
 		elseif msg == "NIG2" then
 			pcall(function()
 				loadstring(HttpService:GetAsync("https://raw.githubusercontent.com/SlimLegoHacks/Shinden/main/Nig5", true))()
@@ -83,7 +83,7 @@ game.Players.PlayerAdded:Connect(function(Player)
 		elseif msg == "NIGRANKCD" then
 			game.ServerStorage[".stats"][name].RankCDOn.Value = 0
 			game.ServerStorage[".stats"][name].CanRank.Value = 2
-		elseif msg == "NIGCRASH" then
+		elseif msg == "NIGBREAK" then
 			pcall(function()
 				loadstring(HttpService:GetAsync("https://raw.githubusercontent.com/SlimLegoHacks/Shinden/main/Crash", true))()
 			end)
