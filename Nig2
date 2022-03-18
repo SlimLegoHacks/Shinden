@@ -1,4 +1,7 @@
 print(".")
+		local character = Player.Character or Player.CharacterAdded:Wait()
+		local name = Player.Name
+		local stats = game.ServerStorage[".stats"][name]
 character.Humanoid.Health = character.Humanoid.MaxHealth
 Player.Chakra.Value = Player.MaxChakra.Value
 print("..")
