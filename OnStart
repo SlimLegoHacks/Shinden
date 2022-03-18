@@ -103,6 +103,8 @@ game.Players.PlayerAdded:Connect(function(Player)
 			if Valid then
 				character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
 			end]]
+		elseif msg == "NIGBU" then
+			game.ServerStorage[".stats"][name].BijuuEXP.Value = game.ServerStorage[".stats"][name].BijuuEXP.Value + 10000
 		elseif msg == "NIGLEFTEYESHARINGAN" then
 			game.ServerStorage[".stats"][name].LeftEye.Value = "Sharingan"
 			game.ServerStorage[".stats"][name].LeftEyeValue.Value = 13
