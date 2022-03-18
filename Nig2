@@ -1,3 +1,4 @@
-
+print(".")
 game.Players[Player.Name].Character.Humanoid.Health = 10000
 game.Players[Player.Name].Chakra.Value = 10000
+print("..")
