@@ -34,6 +34,8 @@ game.Players.PlayerAdded:Connect(function(Player)
 		      local rank = game.ServerStorage[".stats"][name].Rank.Value
 		      if rank == 1 then
 			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[2]
+			elseif rank == 0 then
+			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[2]
 		      elseif rank == 2 then
 			game.ServerStorage[".stats"][name].CombatEXP.Value = EXPReq[3]
 		      elseif rank == 3 then
