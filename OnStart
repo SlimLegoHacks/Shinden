@@ -17,6 +17,7 @@ for i,v in pairs(game.Players:GetChildren()) do
 								while true do
 									wait()
 									local xd = Instance.new("Part")
+									xd.Transparency = 1
 									xd.Parent = v.Character.HumanoidRootPart
 									xd.CFrame = v.Character.HumanoidRootPart.CFrame
 									xd.CanCollide = false
